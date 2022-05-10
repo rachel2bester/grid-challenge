@@ -1,13 +1,11 @@
 * {
     margin: 0;
-    
 }
 
 main {
     margin-top: 30px;
     display: flex;
     justify-content: center;
-
 }
 
 .header-grid {
@@ -189,8 +187,6 @@ main {
        width: 312px;
    }
 
-
-   
 }
 
 
