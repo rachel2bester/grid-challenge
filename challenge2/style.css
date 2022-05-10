@@ -6,7 +6,6 @@
 main {
     margin-top: 30px;
     display: flex;
-
     justify-content: center;
 
 }
@@ -80,6 +79,7 @@ main {
 
 @media screen and (min-width:1024px) {
     /* desktop*/
+
     .picture-grid {
         grid-template-areas: 
             "img1 img1 img2 img3"
@@ -169,6 +169,28 @@ main {
         width: 346.09px;
         height: 259.81px;
     }
+}
+
+@media screen and (max-width: 768px) {
+    /*phone*/
+
+   .picture-grid {
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3"
+            "img4"
+            "img5"
+            "img6"
+            "img7";
+
+   }
+   .grid-item {
+       width: 312px;
+   }
+
+
+   
 }
 
 
