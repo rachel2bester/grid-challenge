@@ -4,85 +4,120 @@
 }
 
 main {
+    margin-top: 30px;
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr 100px 100px 100px;
+    grid-row: 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+
+.header-item {
+    height: 50px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
+.about, .contact {
+    opacity: 50%;
+}
 
+.logo {
+    font-size: 25px;
+}
 
+.about:hover, .contact:hover{
+    opacity: 100%;
+}
+
+.logo:hover, .work:hover{
+    font-weight: bolder;
+}
 
 .picture-grid {
     display: grid;
-    grid-template-areas: 
-        "img1 img1 img2 img3"
-        "img4 img4 img4 img3"
-        "img4 img4 img4 img5"
-        "img6 img7 img7 img7";
 }
 
 .grid-item {
-    width: 100%;
-    
+    padding: 4.4px;
 }
 
 .img1 {
     grid-area: img1;
-    position: absolute;
     width: 281.19px;
     height: 187.61px;
-    left: 73.38px;
-    top: 84.78px;
 }
 
 .img2 {
     grid-area: img2;
-    position: absolute;
     width: 187.61px;
     height: 187.61px;
-    left: 362.44px;
-    top: 84.78px;
+
+   
 }
 
 .img3 {
     grid-area: img3;
-    position: absolute;
     width: 225.14px;
-    height: 337.7px;
-    left: 557.93px;
-    top: 84.78px;
+    height: 337.7px;   
 }
 
 .img4 {
     grid-area: img4;
-    position: absolute;
     width: 476.68px;
     height: 317.78px;
-    left: 73.38px;
-    top: 281.2px;
+
+   
 }
 
 .img5 {
     grid-area: img5;
-    position: absolute;
     width: 225.14px;
     height: 166.77px;
-    left: 557.93px;
-    top: 432.21px;
 }
 
 .img6 {
     grid-area: img6;
-    position: absolute;
     width: 225.14px;
-    height: 337.7px;
-    left: 73.38px;
-    top: 607.78px;
+    height: 337.7px; 
 }
 
 .img7 {
     grid-area: img7;
-    position: absolute;
     width: 473.9px;
     height: 337.7px;
-    left: 309.17px;
-    top: 607.78px;
 }
+
+@media screen and (min-width:1024px) {
+    /* desktop*/
+    .picture-grid {
+        grid-template-areas: 
+            "img1 img1 img2 img3"
+            "img4 img4 img4 img3"
+            "img4 img4 img4 img5"
+            "img6 img7 img7 img7";
+    }
+}
+
+@media screen and (max-width:1024) {
+     /*tablet*/
+    .picture-grid {
+        grid-template-areas: 
+            "img1 img2"
+            "img3 img4"
+            "img3 img5"
+            "img6 img7";
+    }
+}
+
+
+
