@@ -17,7 +17,6 @@ main {
     grid-row: 1fr;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    
 }
 
 .header-item {
@@ -53,48 +52,30 @@ main {
 
 .img1 {
     grid-area: img1;
-    width: 281.19px;
-    height: 187.61px;
 }
 
 .img2 {
     grid-area: img2;
-    width: 187.61px;
-    height: 187.61px;
-
-   
 }
 
 .img3 {
     grid-area: img3;
-    width: 225.14px;
-    height: 337.7px;   
 }
 
 .img4 {
     grid-area: img4;
-    width: 476.68px;
-    height: 317.78px;
-
-   
 }
 
 .img5 {
     grid-area: img5;
-    width: 225.14px;
-    height: 166.77px;
 }
 
 .img6 {
     grid-area: img6;
-    width: 225.14px;
-    height: 337.7px; 
 }
 
 .img7 {
-    grid-area: img7;
-    width: 473.9px;
-    height: 337.7px;
+    grid-area: img7
 }
 
 @media screen and (min-width:1024px) {
@@ -106,16 +87,87 @@ main {
             "img4 img4 img4 img5"
             "img6 img7 img7 img7";
     }
+
+    .img1 {
+        width: 281.19px;
+        height: 187.61px;
+    }
+    
+    .img2 {
+        width: 187.61px;
+        height: 187.61px;
+    }
+    
+    .img3 {
+        width: 225.14px;
+        height: 337.7px;   
+    }
+    
+    .img4 {
+        width: 476.68px;
+        height: 317.78px;
+    }
+    
+    .img5 {
+        width: 225.14px;
+        height: 166.77px;
+    }
+    
+    .img6 {
+        width: 225.14px;
+        height: 337.7px; 
+    }
+    
+    .img7 {
+        width: 473.9px;
+        height: 337.7px;
+    }
 }
 
-@media screen and (max-width:1024) {
+@media screen and (max-width:1024px) {
      /*tablet*/
+
     .picture-grid {
         grid-template-areas: 
-            "img1 img2"
-            "img3 img4"
-            "img3 img5"
-            "img6 img7";
+            "img1 img1 img1 img2"
+            "img3 img3 img4 img4"
+            "img3 img3 img5 img5"
+            "img6 img7 img7 img7";
+    }
+
+    .img1 {
+        width: 323.41px;
+        height: 203.12px;
+    }
+    
+    .img2 {
+        width: 215.05px;
+        height: 203.12px;
+    }
+    
+    .img3 {
+        width: 258.73px;
+        height: 364.51px;
+    }
+    
+    .img4 {
+        width: 278.89px;
+        height: 173.99px;
+    }
+    
+    .img5 {
+        width: 278.89px;
+        height: 177.93px;
+    }
+    
+    .img6 {
+        width: 185.65px;
+        height: 259.81px;
+    }
+    
+    .img7 {
+        width: 346.09px;
+        height: 259.81px;
     }
 }
 
